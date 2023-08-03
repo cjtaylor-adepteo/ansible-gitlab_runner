@@ -12,7 +12,7 @@
     - d: /etc/init.d
       f: gitlab-runner
       t: gitlab-runner-initd
-      m: '0644'
+      m: '0755'
   template:
     src: '{{ item.t }}.j2'
     dest: '{{ item.d }}/{{ item.f }}'
